@@ -5,7 +5,7 @@ const PEOPLE_URL = 'people/:id' //para las personas
 const LUKE_URL =`${API_URL}${PEOPLE_URL.replace(':id', 1)}`
 const OPTS = { crossDomain: true }
 
-const onPeoleRespones = function (persona){
+const onPeopleRespones = function (persona){
     console.log(`Hola yo soy, ${persona.name}`)
 }
 
