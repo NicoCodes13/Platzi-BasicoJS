@@ -16,4 +16,4 @@ const onPeopleRespones = function (persona){
 
 obtenerPersonaje(1)
 obtenerPersonaje(2)
-obtenerPersonaje(3)
+obtenerPersonaje(3) //no conocemos el orden de llegada de las respuestas ya que depende del server
