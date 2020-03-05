@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clase var let y const</title>
+</head>
+<body> 
+    <script>
+        //Al usar var js entinede como declaracion en la parte superior de la funcion para toda la funcion 
+        // Al usar let la variable se ve reducida al bloque donde es usada fuera de este no existe
+        //const pareecida a let solo que no permite el reasignar el valor mas son modificables enb los casos de arrays
+        var sacha = {
+            nombre: 'Sacha',
+            apellido: 'Lifszyc',
+            edad: 28
+        }
+
+        const MAYORIA_DE_EDAD = 18
+
+        function esMayorDeEdad(persona){
+            if(persona.edad > MAYORIA_DE_EDAD)
+            {
+                var mensaje = 'Es mayor de edad'
+            }else{
+                let mensaje2 = 'Es menor de edad'
+            }
+            console.log(mensaje)
+            console.log(mensaje2)
+        }
+
+        esMayorDeEdad(sacha)
+    </script>
+</body>
+</html>
