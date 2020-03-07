@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clase 31 - manejo de fechas</title>
+</head>
+
+<body>
+    <script>
+        function diasEntreFechas(fecha1, fecha2) {
+            const unDia = 1000 * 60 * 60 * 24
+            const diferencia = Math.abs(fecha1 - fecha2) //rfetorna info en ms
+
+            return Math.floor(diferencia / unDia)
+        }
+
+        const hoy = new Date()
+        const nacimiento = new Date(1996, 10, 13) //recibe mes(contando desde 0) año y dia
+        
+    </script>
+</body>
+
+</html>
