@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clase 40 - closures</title>
+</head>
+<body>
+    <script>
+        //Una funcion que recuerda el estado de las cosas cuando fue llamada
+        function crearSaludo(finalDeFrase){ //funcion generadora de funciones
+            return function (nombre){
+                console.log(`Hola ${nombre} ${finalDeFrase }`)
+            }
+        }
+
+        const saludoArgentino = crearSaludo('che')
+        const saludoMexicano = crearSaludo('wey')
+        const saludoColombiano = crearSaludo('parce')
+
+        saludoArgentino('sacha') //Hola sacha che
+        saludoMexicano('sacha') //Hola sacha wey
+        saludoColombiano('sacha') //Hola sacha parce
+        </script>
+</body>
+</html>
